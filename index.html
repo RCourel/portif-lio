@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeep - Modelos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #000; /* Texto preto para boa visibilidade */
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+        }
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+        .hero-section video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+        .hero-section .content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        .vehicle-card img {
+            height: 220px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        .vehicle-card {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .vehicle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .vehicle-card .btn {
+            background-color: #333;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .vehicle-card .btn:hover {
+            background-color: #ffc107;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .container h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .row {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Bexp04.PNG" alt="Logo Jeep">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#veiculos">Modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.bexp.com.br/quem-somos">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.bexp.com.br/jeep/empresa/fale-conosco">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero com vídeo de fundo -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="videos/Jeep.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
+        <div class="content">
+            <h1>Explore os Modelos Jeep</h1>
+            <p>Aventura, força e design incomparável em cada detalhe.</p>
+        </div>
+    </section>
+
+<section id="veiculos" class="container mt-5">
+    <h2 class="text-center mb-4">Nossos Modelos</h2>
+    <div class="row">
+        <!-- Jeep Renegade -->
+        <div class="col-md-4">
+            <div class="card vehicle-card">
+                <img src="images/Renegade.png" alt="Jeep Renegade">
+                <div class="card-body">
+                    <h5 class="card-title">Jeep Renegade</h5>
+                    <p class="card-text">Compacto e robusto, o Renegade é perfeito para quem ama explorar novos horizontes.</p>
+                    <a href="https://www.bexp.com.br/jeep/novos/renegade-2024" target="_blank" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+ <!-- Jeep Compass -->
+ <div class="col-md-4">
+    <div class="card vehicle-card">
+        <img src="images/Compass 2024.png" alt="Jeep Compass">
+        <div class="card-body">
+            <h5 class="card-title">Jeep Compass</h5>
+            <p class="card-text">Com design sofisticado e tecnologia de ponta, o Compass oferece conforto e desempenho excepcionais.</p>
+            <a href="https://www.bexp.com.br/jeep/novos/compass-2024" target="_blank" class="btn btn-primary">Saiba mais</a>
+        </div>
+    </div>
+</div>
+
+       <!-- Jeep Commander -->
+       <div class="col-md-4">
+        <div class="card vehicle-card">
+            <img src="images/Commander 2024.png" alt="Jeep Commander">
+            <div class="card-body">
+                <h5 class="card-title">Jeep Commander</h5>
+                <p class="card-text">Luxuoso e espaçoso, o Commander é o SUV perfeito para famílias que valorizam conforto e sofisticação.</p>
+                <a href="https://www.bexp.com.br/jeep/novos/commander-2024" target="_blank" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- Jeep Grand Cherokee -->
+     <div class="col-md-4">
+        <div class="card vehicle-card">
+            <img src="images/Grand Cherokee.png" alt="Jeep Grand Cherokee">
+            <div class="card-body">
+                <h5 class="card-title">Jeep Grand Cherokee</h5>
+                <p class="card-text">O Grand Cherokee é o ápice da força, luxo e desempenho off-road, para quem busca o melhor.</p>
+                <a href="https://www.bexp.com.br/jeep/novos/grand-cherokee-2023" target="_blank" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+   <!-- Jeep Gladiator -->
+   <div class="col-md-4">
+    <div class="card vehicle-card">
+        <img src="images/Gladiator.png" alt="Jeep Gladiator">
+        <div class="card-body">
+            <h5 class="card-title">Jeep Gladiator</h5>
+            <p class="card-text">A união de uma picape versátil com o espírito off-road, perfeita para aventuras e trabalho pesado.</p>
+            <a href="https://www.bexp.com.br/jeep/novos/gladiator" target="_blank" class="btn btn-primary">Saiba mais</a>
+        </div>
+    </div>
+</div>
+
+  <!-- Jeep Wrangler -->
+  <div class="col-md-4">
+    <div class="card vehicle-card">
+        <img src="images/Wrangler 2023.png" alt="Jeep Wrangler">
+        <div class="card-body">
+            <h5 class="card-title">Jeep Wrangler</h5>
+            <p class="card-text">O ícone do off-road, o Wrangler é ideal para quem busca liberdade e aventuras extremas.</p>
+            <a href="https://www.bexp.com.br/jeep/novos/wrangler-2023" target="_blank" class="btn btn-primary">Saiba mais</a>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+ <!-- Rodapé -->
+ <footer>
+    <p>&copy; 2024 Jeep - Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
